@@ -8,6 +8,10 @@ let doneCol = document.getElementById("done")
 
 
 function renderTodo(){
+    if(todo.length == 0){
+        todoCol.innerHTML = "<h1>COMPLETED</h1>";
+        return;
+    }
     todoCol.innerHTML = "<h1>Todo</h1>";
     todo.forEach((item, idx)=>{
         todoCol.innerHTML += `
@@ -20,6 +24,10 @@ function renderTodo(){
 }
 
 function renderProgress(){
+    if(progress.length == 0){
+        progressCol.innerHTML = "<h1>COMPLETED</h1>";
+        return;
+    }
     progressCol.innerHTML = "<h1>Progess</h1>";
     progress.forEach((item, idx)=>{
         progressCol.innerHTML += `

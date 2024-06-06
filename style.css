@@ -33,5 +33,13 @@ body{
     background-color: green;
 }
 
+@media screen and (max-width:768px){
+    body{
+        flex-direction: column;
+        width:100vw;
+    }
+    
+}
+
 
 
