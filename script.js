@@ -24,8 +24,12 @@ function renderTodo(){
 }
 
 function renderProgress(){
-    if(progress.length == 0){
+    if(progress.length == 0 && todo.length==0){
         progressCol.innerHTML = "<h1>COMPLETED</h1>";
+        return;
+    }
+    if(progress.length == 0 && todo.length!=0){
+        progressCol.innerHTML = "<h1>PENDING</h1>";
         return;
     }
     progressCol.innerHTML = "<h1>Progess</h1>";
