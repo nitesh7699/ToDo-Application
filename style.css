@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:12px;
+}
+
+.column{
+    height:100vh;
+    padding:16px;
+    border:1px solid black;
+    width:100%;
+    /* background-color: black; */
+    color:black;
+}
+
+.task{
+    border:1px solid black;
+    padding:16px;
+    background-color: lightgray;
+    margin-bottom: 10px;
+}
+
+.todo{
+    background-color: red;
+}
+
+.progress{
+    background-color: yellow;
+}
+
+.done{
+    background-color: green;
+}
+
+
+
